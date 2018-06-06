@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.3.6" EngineVersion="4.5" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages>
+    <File><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_camera_ip_axis.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_camera_ip_axis.pck]]></Relative></File>
+    <File><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_python_v2/rtmaps_python_v2.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_python_v2/rtmaps_python_v2.pck]]></Relative></File>
+  </RequiredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="camera_AXIS_MJPG_1" Model="camera_AXIS_MJPG" Version="1.6.1" x="104" y="216" z="0">
+    <Output LongName="camera_AXIS_MJPG_1.image" Name="image">
+      <Property LongName="camera_AXIS_MJPG_1.image.subsampling" Type="1">1</Property>
+      <Property LongName="camera_AXIS_MJPG_1.image.fifosize" Type="1">16</Property>
+      <Property LongName="camera_AXIS_MJPG_1.image.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="camera_AXIS_MJPG_1.serverName" Type="3"><![CDATA[10.234.224.5]]></Property>
+    <Property LongName="camera_AXIS_MJPG_1.serverPort" Type="1">80</Property>
+    <Property LongName="camera_AXIS_MJPG_1.camera" Type="4"><![CDATA[5|0|1|2|3|4|quad]]></Property>
+    <Property LongName="camera_AXIS_MJPG_1.showTime" Type="0">false</Property>
+    <Property LongName="camera_AXIS_MJPG_1.color" Type="0">true</Property>
+    <Property LongName="camera_AXIS_MJPG_1.compressionLevel" Type="1">-1</Property>
+    <Property LongName="camera_AXIS_MJPG_1.fps" Type="1">-1</Property>
+    <Property LongName="camera_AXIS_MJPG_1.usePassword" Type="0">true</Property>
+    <Property LongName="camera_AXIS_MJPG_1.login" Type="3"><![CDATA[root]]></Property>
+    <Property LongName="camera_AXIS_MJPG_1.password" Type="3"><![CDATA[root]]></Property>
+    <Property LongName="camera_AXIS_MJPG_1.threaded" Type="0">true</Property>
+    <Property LongName="camera_AXIS_MJPG_1.priority" Type="1">128</Property>
+    <Property LongName="camera_AXIS_MJPG_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="ImageViewer_2_5" Model="ImageViewer" Version="1.21" x="600" y="120" z="0">
+    <Input LongName="ImageViewer_2_5.input" Name="input">
+      <Property LongName="ImageViewer_2_5.input.readerType" Type="1">2</Property>
+      <Property LongName="ImageViewer_2_5.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="ImageViewer_2_5.oMouseClick" Name="oMouseClick">
+      <Property LongName="ImageViewer_2_5.oMouseClick.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_2_5.oMouseClick.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_2_5.oMouseClick.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="ImageViewer_2_5.oROI" Name="oROI">
+      <Property LongName="ImageViewer_2_5.oROI.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_2_5.oROI.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_2_5.oROI.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="ImageViewer_2_5.oWindowEvent" Name="oWindowEvent">
+      <Property LongName="ImageViewer_2_5.oWindowEvent.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_2_5.oWindowEvent.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_2_5.oWindowEvent.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="ImageViewer_2_5.left" Type="1">184</Property>
+    <Property LongName="ImageViewer_2_5.top" Type="1">479</Property>
+    <Property LongName="ImageViewer_2_5.width" Type="1">601</Property>
+    <Property LongName="ImageViewer_2_5.height" Type="1">456</Property>
+    <Property LongName="ImageViewer_2_5.autoResize" Type="0">true</Property>
+    <Property LongName="ImageViewer_2_5.alwaysOnTop" Type="0">true</Property>
+    <Property LongName="ImageViewer_2_5.fullscreen" Type="0">false</Property>
+    <Property LongName="ImageViewer_2_5.monitorForFullscreen" Type="1">1</Property>
+    <Property LongName="ImageViewer_2_5.displayTitleBar" Type="0">true</Property>
+    <Property LongName="ImageViewer_2_5.displayBorder" Type="0">true</Property>
+    <Property LongName="ImageViewer_2_5.engine" Type="4"><![CDATA[4|2|Direct Show|GDI|OpenGL|Direct Show (VMR 7)]]></Property>
+    <Property LongName="ImageViewer_2_5.keepAspectRatio" Type="0">false</Property>
+    <Property LongName="ImageViewer_2_5.imageAspect" Type="4"><![CDATA[3|0|Anamorphic|Letterbox|Pan And Scan]]></Property>
+    <Property LongName="ImageViewer_2_5.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
+    <Property LongName="ImageViewer_2_5.verbose" Type="0">false</Property>
+    <Property LongName="ImageViewer_2_5.threaded" Type="0">true</Property>
+    <Property LongName="ImageViewer_2_5.priority" Type="1">128</Property>
+    <Property LongName="ImageViewer_2_5.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="JPEGDecompress_1" Model="JPEGDecompress" Version="8.5" x="288" y="248" z="0">
+    <Input LongName="JPEGDecompress_1.input" Name="input">
+      <Property LongName="JPEGDecompress_1.input.readerType" Type="1">0</Property>
+      <Property LongName="JPEGDecompress_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="JPEGDecompress_1.output" Name="output">
+      <Property LongName="JPEGDecompress_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="JPEGDecompress_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="JPEGDecompress_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="JPEGDecompress_1.subsampling" Type="1">1</Property>
+    <Property LongName="JPEGDecompress_1.output_format" Type="4"><![CDATA[5|0|Auto|RGB|BGR|GRAY|YUV]]></Property>
+    <Property LongName="JPEGDecompress_1.discard_on_warning" Type="0">false</Property>
+    <Property LongName="JPEGDecompress_1.threaded" Type="0">true</Property>
+    <Property LongName="JPEGDecompress_1.priority" Type="1">128</Property>
+    <Property LongName="JPEGDecompress_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="python_v2_6" Model="python_v2" Version="1.5" x="480" y="328" z="0">
+    <Input LongName="python_v2_6.in" Name="in">
+      <Property LongName="python_v2_6.in.readerType" Type="1">0</Property>
+      <Property LongName="python_v2_6.in.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="python_v2_6.out" Name="out">
+      <Property LongName="python_v2_6.out.subsampling" Type="1">1</Property>
+      <Property LongName="python_v2_6.out.fifosize" Type="1">16</Property>
+      <Property LongName="python_v2_6.out.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="python_v2_6.autoReloadSubModules" Type="0">true</Property>
+    <Property LongName="python_v2_6.pythonVersion" Type="4"><![CDATA[2|0|3.6|2.7]]></Property>
+    <Property LongName="python_v2_6.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[AUTO/]]></Property>
+    <Property LongName="python_v2_6.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/srvenkit/Desktop/Sreeram_RTMaps/WorkingModelsForProject/IPCAM_Pedastrian/workingTemplate.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/workingTemplate.py]]></Relative></Property>
+    <Property LongName="python_v2_6.pythonLogFile" Type="3" SubType="16"><![CDATA[C:/Users/srvenkit/RTMaps-4.0/rtmaps_python_log_python_v2_6.txt]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/rtmaps_python_log_python_v2_6.txt]]></Relative></Property>
+    <Property LongName="python_v2_6.KeepPythonAliveAfterDeath" Type="0">false</Property>
+    <Property LongName="python_v2_6.verbose" Type="0">true</Property>
+    <Property LongName="python_v2_6.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="python_v2_6.internalInputs" Type="3" SubType="128"><![CDATA[in,1;]]></Property>
+    <Property LongName="python_v2_6.internalOutputs" Type="3" SubType="128"><![CDATA[out,10,0;]]></Property>
+    <Property LongName="python_v2_6.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <Property LongName="python_v2_6.readingPolicy" Type="4"><![CDATA[4|1|Synchro|Reactive|Sampling|Triggered]]></Property>
+    <Property LongName="python_v2_6.timeout" Type="1">0</Property>
+    <Property LongName="python_v2_6.memorySize" Type="1">119734912</Property>
+    <ReadOnlyProperty LongName="python_v2_6.pythonPID" Type="1">0</ReadOnlyProperty>
+    <Property LongName="python_v2_6.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
+    <Property LongName="python_v2_6.threaded" Type="0">true</Property>
+    <Property LongName="python_v2_6.priority" Type="1">128</Property>
+    <Property LongName="python_v2_6.autoStart" Type="0">true</Property>
+  </Component>
+  <Connection Output="python_v2_6.out" Input="ImageViewer_2_5.input"/>
+  <Connection Output="camera_AXIS_MJPG_1.image" Input="JPEGDecompress_1.input"/>
+  <Connection Output="JPEGDecompress_1.output" Input="python_v2_6.in"/>
+  <RTBoardView ID="JavaStudio1.0">
+    <ComponentBox InstanceName="ImageViewer_2_5" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="python_v2_6" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ConnectionShape InstanceName="ImageViewer_2_5.input" color="0"/>
+    <ConnectionShape InstanceName="JPEGDecompress_1.input" color="0"/>
+    <ConnectionShape InstanceName="python_v2_2.in" color="0"/>
+    <ConnectionShape InstanceName="python_v2_6.in" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>
